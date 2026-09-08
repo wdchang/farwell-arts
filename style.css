@@ -18,6 +18,8 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+body { overflow-x: hidden; }
+
 body {
   margin: 0;
   background: var(--paper);
@@ -72,31 +74,11 @@ body {
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); }
 
-/* ---- plate --------------------------------------------------------------- */
-
-.plate {
-  max-width: 23rem;
-  margin: 4.5rem auto 0;
-}
-
-.plate img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.plate figcaption {
-  color: var(--quiet);
-  font-size: 0.8125rem;
-  line-height: 1.5;
-  margin-top: 1rem;
-}
-
 /* ---- about --------------------------------------------------------------- */
 
 .about {
   max-width: 26rem;
-  margin: 4.25rem auto 0;
+  margin: 5.5rem auto 0;
 }
 
 .about p { margin: 0 0 1.7rem; line-height: 1.65; }
@@ -136,11 +118,22 @@ body {
 
 /* ---- footer -------------------------------------------------------------- */
 
-.colophon .device {
+/* ---- the drawing, as the page's ground ----------------------------------- */
+
+.ground {
   display: block;
-  width: 1.75rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 62rem;
   height: auto;
-  margin: 0 auto 1.4rem;
+  margin-top: 7rem;
+  opacity: 0.62;
+}
+
+@media (max-width: 44rem) {
+  .ground { margin-top: 4.5rem; }
 }
 
 .colophon {
@@ -149,7 +142,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--quiet);
-  margin-top: 7rem;
+  margin-top: 3.25rem;
   line-height: 2.2;
 }
 
