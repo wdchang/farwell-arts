@@ -113,14 +113,6 @@ body {
 
 .event .when { color: var(--quiet); }
 
-.event .note {
-  display: block;
-  color: var(--quiet);
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  max-width: 27rem;
-  margin: 0.55rem auto 0;
-}
 
 /* ---- footer -------------------------------------------------------------- */
 
