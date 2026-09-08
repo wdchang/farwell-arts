@@ -116,6 +116,13 @@ body {
 
 /* ---- footer -------------------------------------------------------------- */
 
+.colophon .device {
+  display: block;
+  width: 1.75rem;
+  height: auto;
+  margin: 0 auto 1.4rem;
+}
+
 .colophon {
   font-family: var(--mono);
   font-size: 0.75rem;
