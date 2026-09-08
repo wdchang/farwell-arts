@@ -54,13 +54,33 @@ body {
   margin: 0 auto;
 }
 
-.blurb {
-  color: var(--quiet);
-  font-size: 1rem;
-  line-height: 1.55;
-  max-width: 27rem;
-  margin: 0 auto;
+/* ---- navigation ---------------------------------------------------------- */
+
+.nav {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 1.4rem 0 0;
 }
+
+.nav a {
+  color: var(--quiet);
+  text-decoration: none;
+  margin: 0 0.85rem;
+}
+.nav a:hover { color: var(--ink); }
+.nav a[aria-current="page"] { color: var(--ink); }
+
+/* ---- about --------------------------------------------------------------- */
+
+.about {
+  max-width: 26rem;
+  margin: 5.5rem auto 0;
+}
+
+.about p { margin: 0 0 1.7rem; line-height: 1.65; }
+.about p:last-child { margin-bottom: 0; }
 
 /* ---- section labels ------------------------------------------------------ */
 
