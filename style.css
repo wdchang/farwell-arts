@@ -72,11 +72,31 @@ body {
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); }
 
+/* ---- plate --------------------------------------------------------------- */
+
+.plate {
+  max-width: 23rem;
+  margin: 4.5rem auto 0;
+}
+
+.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.plate figcaption {
+  color: var(--quiet);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
 /* ---- about --------------------------------------------------------------- */
 
 .about {
   max-width: 26rem;
-  margin: 5.5rem auto 0;
+  margin: 4.25rem auto 0;
 }
 
 .about p { margin: 0 0 1.7rem; line-height: 1.65; }
