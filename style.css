@@ -9,6 +9,7 @@
   --paper: #ffffff;
   --ink:   #000000;
   --quiet: #6b6b6b;
+  --accent: #365f5e;   /* the masthead teal, for links */
 
   --serif: "Newsreader", "Times New Roman", Times, serif;
   --mono:  "Courier Prime", ui-monospace, "SF Mono", Menlo, Courier, monospace;
@@ -114,6 +115,16 @@ body {
 }
 
 .event .when { color: var(--quiet); }
+
+/* artist links: visible, but they must not outshout the names */
+.event a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #cfcfcf;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.event a:hover { color: var(--accent); text-decoration-color: currentColor; }
 
 
 /* ---- footer -------------------------------------------------------------- */
