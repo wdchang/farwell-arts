@@ -86,13 +86,11 @@ body {
 }
 
 .event .with,
-.event .where,
 .event .when {
   display: block;
   line-height: 1.55;
 }
 
-.event .where,
 .event .when { color: var(--quiet); }
 
 .event .note {
@@ -103,18 +101,6 @@ body {
   max-width: 27rem;
   margin: 0.55rem auto 0;
 }
-
-/* links stay quiet until you reach for them */
-a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-color: #cfcfcf;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-a:hover { text-decoration-color: currentColor; }
-
-.title a { text-decoration-color: #cfcfcf; }
 
 /* ---- footer -------------------------------------------------------------- */
 
@@ -127,7 +113,6 @@ a:hover { text-decoration-color: currentColor; }
   margin-top: 7rem;
   line-height: 2.2;
 }
-.colophon a { text-decoration-color: #cfcfcf; }
 
 /* ---- small screens ------------------------------------------------------- */
 
