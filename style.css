@@ -147,6 +147,15 @@ body {
   .ground { margin-top: 4.5rem; }
 }
 
+.colophon a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #cfcfcf;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.colophon a:hover { color: var(--accent); text-decoration-color: currentColor; }
+
 /* the lamp closes the page, after the colophon rather than above it */
 .colophon .device {
   display: block;
