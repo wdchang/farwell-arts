@@ -1,0 +1,133 @@
+/* --------------------------------------------------------------------------
+   farwell-arts.org
+   One centred column on white. Hierarchy comes from case and space.
+   Section labels are tracked-out mono; titles are italic; everything else
+   sits quietly beneath them.
+   -------------------------------------------------------------------------- */
+
+:root {
+  --paper: #ffffff;
+  --ink:   #000000;
+  --quiet: #6b6b6b;
+
+  --serif: "Newsreader", "Times New Roman", Times, serif;
+  --mono:  "Courier Prime", ui-monospace, "SF Mono", Menlo, Courier, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.shell {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 6rem;
+}
+
+/* ---- masthead ------------------------------------------------------------ */
+
+.mark {
+  font-family: var(--mono);
+  font-size: 0.9375rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+  font-weight: 400;
+}
+
+.blurb {
+  color: var(--quiet);
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 27rem;
+  margin: 0 auto;
+}
+
+/* ---- section labels ------------------------------------------------------ */
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 5.5rem 0 2.25rem;
+}
+
+/* ---- entries ------------------------------------------------------------- */
+
+.event { margin: 0 0 2.75rem; }
+.event:last-child { margin-bottom: 0; }
+
+.event .title {
+  display: block;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.event .with,
+.event .where,
+.event .when {
+  display: block;
+  line-height: 1.55;
+}
+
+.event .where,
+.event .when { color: var(--quiet); }
+
+.event .note {
+  display: block;
+  color: var(--quiet);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  max-width: 27rem;
+  margin: 0.55rem auto 0;
+}
+
+/* links stay quiet until you reach for them */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #cfcfcf;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-color: currentColor; }
+
+.title a { text-decoration-color: #cfcfcf; }
+
+/* ---- footer -------------------------------------------------------------- */
+
+.colophon {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--quiet);
+  margin-top: 7rem;
+  line-height: 2.2;
+}
+.colophon a { text-decoration-color: #cfcfcf; }
+
+/* ---- small screens ------------------------------------------------------- */
+
+@media (max-width: 34rem) {
+  .shell { padding: 3rem 1.25rem 4.5rem; }
+  .label { margin: 4rem 0 2rem; }
+  .event { margin-bottom: 2.5rem; }
+  .event .title { font-size: 1.1875rem; }
+}
