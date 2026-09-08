@@ -147,6 +147,15 @@ body {
   .ground { margin-top: 4.5rem; }
 }
 
+/* the lamp closes the page, after the colophon rather than above it */
+.colophon .device {
+  display: block;
+  width: 1.5rem;
+  height: auto;
+  margin: 1.9rem auto 0;
+  opacity: 0.85;
+}
+
 .colophon {
   font-family: var(--mono);
   font-size: 0.75rem;
